@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Comma-separated list of allowed frontend origins, e.g. "https://yami-hub.onrender.com,http://localhost:5173"
-const allowedOrigins = (process.env.CORS_ORIGIN || "*").split(",").map((s) => s.trim());
+const allowedOrigins = (process.env.CORS_ORIGIN || "https://yamihub.onrender.com").split(",").map(s => s.trim());
 
 app.use(
   cors({
